@@ -1,2 +1,4 @@
 # Booking-a-Place-for-eat
-Latihan Buat Website
+Latihan Buat Website dengan Assistant AI
+
+Terampil campur AI
