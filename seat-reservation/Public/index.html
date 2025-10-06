@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reservasi Kursi - Demo</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reservasi Kursi</h1>
+
+    <section class="controls">
+      <label>
+        Tanggal:
+        <input type="date" id="date" value="">
+      </label>
+
+      <label>
+        Waktu:
+        <input type="time" id="time" value="">
+      </label>
+
+      <label>
+        Outlet:
+        <select id="outlet">
+          <option value="Main">Main</option>
+          <option value="VIP">VIP</option>
+        </select>
+      </label>
+
+      <button id="load">Load Kursi</button>
+    </section>
+
+    <section class="seat-area">
+      <h2>Pilih Kursi Anda</h2>
+      <div id="seat-container" class="seat-container"></div>
+      <p id="legend"><span class="box available"></span> Tersedia &nbsp; <span class="box reserved"></span> Terisi</p>
+    </section>
+
+    <section class="form-area">
+      <h2>Data Pemesan</h2>
+      <form id="booking-form">
+        <input type="text" id="name" placeholder="Nama lengkap" required>
+        <input type="tel" id="hp" placeholder="Nomor HP" required>
+        <p>Dipilih: <span id="picked">-</span></p>
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+      <div id="message"></div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
