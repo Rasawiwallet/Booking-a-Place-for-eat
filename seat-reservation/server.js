@@ -64,7 +64,9 @@ app.post('/api/reserve', (req, res) => {
 
   res.json({ ok: true, reservation: newResv });
 });
-
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'home.html'));
+});
 // fallback to index.html for SPA-ish behavior
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
